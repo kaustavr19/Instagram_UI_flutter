@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Insta_home.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -10,13 +12,17 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'Instagram',
       debugShowCheckedModeBanner: false,
-      //home: new InstaHome(),
       theme: new ThemeData(
         primaryColor: Colors.indigo[700],
-        primaryIconTheme: IconThemeData(color: Colors.pink),
-        primaryTextTheme: TextTheme(title: TextStyle(color: Colors.white)),
+        primaryIconTheme: IconThemeData(color: Colors.white),
+        primaryTextTheme: TextTheme(
+            title: TextStyle(
+          color: Colors.white,
+          fontFamily: "Aveny",
+        )),
         textTheme: TextTheme(title: TextStyle(color: Colors.black)),
       ),
+      home: new InstaHome(),
     );
   }
 }
